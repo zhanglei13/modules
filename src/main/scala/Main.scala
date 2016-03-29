@@ -8,8 +8,13 @@ import org.apache.spark.sql.hive.HiveContext
  */
 object Main {
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("Test").setMaster("local")
+    // initial context
+    val conf = new SparkConf().setAppName("modules").setMaster("local")
     val sc = new SparkContext(conf)
     val sqlContext = new HiveContext(sc)
+
+    // initial fields
+
+    // body
   }
 }
