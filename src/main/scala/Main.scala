@@ -9,7 +9,7 @@ import org.apache.spark.sql.hive.HiveContext
 object Main {
   def main(args: Array[String]): Unit = {
     // initial context
-    val conf = new SparkConf().setAppName("modules").setMaster("local")
+    val conf = new SparkConf().setAppName("modules").setMaster("spark://192.168.99.105:7077")
     val sc = new SparkContext(conf)
     val sqlContext = new HiveContext(sc)
 
